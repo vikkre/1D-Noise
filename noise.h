@@ -6,11 +6,11 @@
 
 class Noise1D {
 	public:
-		Noise1D(const std::vector<float>& values, float depth);
+		Noise1D(const std::vector<float>& values, unsigned int depth);
 
-		float get(int x);
+		float get(float x);
 
-		float depth;
+		unsigned int depth;
 	private:
 		float getLerpedValue(float x, float degree);
 		float lerp(float a, float b, float delta);

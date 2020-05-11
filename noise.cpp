@@ -1,10 +1,10 @@
 #include "noise.h"
 
-Noise1D::Noise1D(const std::vector<float>& values, float depth)
+Noise1D::Noise1D(const std::vector<float>& values, unsigned int depth)
 :depth(depth), values(values) {
 }
 
-float Noise1D::get(int x) {
+float Noise1D::get(float x) {
 	float val = 0.0f;
 	float sum = 0;
 

@@ -10,7 +10,7 @@ int main() {
 	Noise1D noise(rands, depth);
 
 	for (int i = 0; i < 256; ++i) {
-		std::cout << noise.get(i) << std::endl;
+		std::cout << noise.get((float) i) << std::endl;
 	}
 
 	return 0;
