@@ -1,7 +1,6 @@
 #ifndef NOISE_H
 #define NOISE_H
 
-#include <math.h>
 #include <vector>
 
 class Noise1D {
@@ -12,7 +11,6 @@ class Noise1D {
 
 		unsigned int depth;
 	private:
-		float getLerpedValue(float x, float degree);
 		float lerp(float a, float b, float delta);
 
 		const std::vector<float> values;
