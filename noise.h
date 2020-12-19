@@ -3,6 +3,7 @@
 
 #include <vector>
 
+
 class Noise1D {
 	public:
 		Noise1D(const std::vector<float>& values, unsigned int depth);
